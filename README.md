@@ -1,5 +1,5 @@
 # MSA
-MSA-Motorcycle Safety Analyzer is a Tensorflow image classifier that classify images from traffic camera's and predict the ridesr is wearing helmet or not with a 85% of accuracy 
+MSA-Motorcycle Safety Analyzer is a Tensorflow image classifier that classify images from traffic camera's and predict the rider is wearing helmet or not with a 85% of accuracy 
 
 <br><br>
 
