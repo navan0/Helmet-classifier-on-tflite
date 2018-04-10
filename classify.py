@@ -5,9 +5,9 @@ image_path = sys.argv[1]
 image_data = tf.gfile.FastGFile(image_path, 'rb').read()
 
 label_lines = [line.rstrip() for line
-		  in tf.gfile.GFile("/home/navaneeth/helmetclassifier/retrained_labels.txt")]
+		  in tf.gfile.GFile("retrained_labels.txt")]
 
-with tf.gfile.FastGFile("/home/navaneeth/helmetclassifier/retrained_graph.pb",'rb') as f:
+with tf.gfile.FastGFile("retrained_graph.pb",'rb') as f:
 	graph_def = tf.GraphDef()
 	graph_def.ParseFromString(f.read())
 	_ = tf.import_graph_def(graph_def,name='')
